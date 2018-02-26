@@ -1,0 +1,447 @@
+
+.nav-container {
+    background-color:#000; position:relative; height:65px;
+    border-top: 5px solid white;
+}
+
+nav#menu  {min-width:300px; padding-right:0px;padding-left:0px; }
+nav#menu .columns {padding:0px;}
+
+/* ==============
+    MOBILE: Menu
+   ==============
+    */
+
+.fa-bars {background-color:#000 ; color:#FFF; padding:18px 18px;}
+.fa-bars:hover {background-color:#222;}
+/*a.toggle .fa-bars {padding-bottom:6px;}*/
+
+nav#menu h4 a i:hover, nav#menu h4 a.toggle i {color: #FFF; background-color:#222;}
+
+nav#menu {
+    background: transparent none repeat scroll 0% 0%;
+    position: relative;
+    z-index: 6000;
+    width: 100%;
+    font-size: .875em;
+    height:65px;
+}
+
+nav#menu ul { 
+    margin:0px;     
+    position: absolute;
+    top: 60px;
+    background: #222 none repeat scroll 0% 0%;
+    z-index: 2000;
+    width: 100%;
+    max-width: 365px;
+    display: none;    
+}
+nav#menu h4 {
+    display: block;
+	float:left;
+	line-height:1em;
+	margin-bottom:0px;
+	font-size:1.75em;
+}
+
+nav#menu h4 a {display: block;}
+
+nav#menu h4 a:hover, nav#menu h4 a.toggle {}
+
+nav#menu h4 a.toggle {/*height:47px;*/ background-color:#222;}
+
+nav#menu ul li {
+	float:left;
+    margin:0px;
+	padding:0px;
+	list-style:none;
+    background-color: #222;
+    cursor: pointer;
+}
+
+nav#menu ul li a {
+    font:400 1.125em 'Roboto', sans-serif;
+    color:#FFF;
+    display:block;
+    padding:20px 0px 20px 0px;
+	text-transform:uppercase;
+	outline-style:none;
+	text-decoration:none;
+    cursor: pointer;
+}
+
+    /*nav#menu ul li a:hover {
+        color: #ee860b; 
+
+    }*/
+
+nav#menu div div > ul li a  {
+    width: 95%;
+    margin:auto;
+}
+
+    nav#menu ul li:hover {
+        background-color: #ee860b;
+    }
+
+    nav#menu div div > ul li:hover {
+        background-color: #ee860b;       
+    }
+
+
+/*nav#menu ul li:hover{
+    color: #ee860b;
+
+}*/
+
+ /* ----- Dropdown ----- */
+    nav#menu ul li:hover ul {
+        visibility:visible;
+        z-index:10000;
+    }
+	
+    nav#menu ul li ul li {
+            margin:0px;
+            padding:0px;
+            float:none;
+            background:none;
+        }	
+
+nav#menu ul li.active.open a	{color:#FFF; background-color:#ee860b; }
+
+
+nav#menu ul li ul li a, nav#menu ul li:hover ul li a {
+    padding: 15px 0 15px 0px;
+    margin: 0px;
+    display: block;
+    height: auto;
+    text-align: left;
+	font:600 .857em 'Idlewild A', 'Idlewild B', sans-serif;
+	text-transform:capitalize;
+
+    width: 87%;
+    margin:auto;    
+    border-bottom: 1px solid black;
+
+
+}	
+
+nav#menu ul.show {
+    display: block;
+}
+
+nav#menu ul li {clear:both; width:100%;}    
+
+
+nav#menu ul li.open {background-color:#ee860b; border-bottom}
+nav#menu ul li.active.open a {background-color:#ee860b; color:#FFF;}
+nav#menu ul.show li a.active {background-color:#FFF; color:#ee860b;}
+
+nav#menu ul ul.show {
+    display: none;
+    position: relative;
+    width: 100%;
+    visibility: visible;
+    top: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    background-color: #FFF;
+    border-width: 0px 0px 0px;
+    border-style: none none solid;
+    border-color: -moz-use-text-color -moz-use-text-color #ee860b;
+}
+
+nav#menu ul ul.active {display: block;}
+ 
+
+nav#menu ul li.active ul.active li a {background-color:#FFF; color:#414d5f;}
+    nav#menu ul li.active ul.active li a:hover {color:#ee860b;}
+    
+    nav#menu ul li ul li {width: 99.4%;}
+
+    /*nav#menu ul li.active:hover a, nav#menu ul li.active a:hover {color: #fff;}*/
+  
+     nav#menu ul li ul li a, nav#menu ul li:hover ul li a {
+
+        display: block;
+        height: auto;
+        text-align: left;
+        background-color: #fff;
+     }
+ 
+    nav#menu ul.show li ul li a, nav#menu ul.show li:first-child ul li a, 
+    nav#menu ul.show li:hover ul li:first-child a {}
+    
+    nav#menu ul li ul.active li:first-of-type() a {}
+    nav#menu ul li.open:first-child a, nav#menu ul.show li.open:first-child ul li:first-child a  {} 
+ 
+ 
+     nav#menu ul li ul li a:hover, 
+     nav#menu ul li:hover ul li a:hover, 
+     nav#menu ul li ul li:hover {
+        background-color: #FFF; color:#ee860b; 
+     }
+
+    nav#menu ul.show li.open ul.show {
+        background-color:#FFF; color: #414d5f;
+    } 
+
+/******* Search *******/
+  #search {float:left; margin-top:12px; margin-left:6px;background-color:#ebebeb;}
+  #search h5 {display:block; font-size:1.2em}
+  
+  #search form {
+      width: 240px;
+      position: absolute;
+      z-index: 1000;
+      right: 10px;
+      display: inline-block;
+      background-color:#ebebeb;
+      color: #959595;      
+  } 
+
+  .fa-search {background-color: #000; color:#f28b00; padding:6px 7px 7px;}
+  .fa-search:hover {color:#ffffff;}
+  a.active .fa-search {padding-bottom:18px;}  
+  
+  #search input {
+      border: none;
+      float: none;
+      background-color: #ebebeb;
+      padding: 7px 10px;
+  } 
+
+#search form input[type='text']{
+    width: calc(98% - 40px);
+    border: 0;
+    padding-left: 15px;
+    padding-top: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125em;
+}
+#search form input[type='submit']{
+    width: 40px;
+    height: 33px;
+    border: 0;
+    color: transparent;
+    background-image: url(../images/search-glass.png);
+    background-position: 15px 8px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+
+}     
+
+
+/* ==========================================================================
+   Media Queries 
+   ========================================================================== */
+
+@media only screen and (min-width: 620px){
+    /*.nav-container {margin-left:10px;}*/
+    nav#menu h4 {margin-left:0px;}
+
+    /*** Search ***/ 
+    #search{
+    width: 280px;
+    margin: 8px 20px 0 0;
+    float: right;
+    }
+
+    #search form {
+        display: block;
+        position: relative;
+        padding: 0px;
+        top: 0px;
+        right: 10px;
+        border: 0px;
+        width: 300px;
+    }
+    #search form.show {
+        top: 0px;
+        border: none;
+    }
+
+    #search form input{
+        float: left;
+      margin-bottom:0px;
+    }
+
+    #search input {
+        border: none;
+        float: right;
+        width: 300px;
+    }
+
+    #search form input[type='text']{
+        width: 260px;
+    }    
+}
+
+@media only screen and (min-width: 768px) {
+    /*.nav-container {margin-right:10px;}*/
+    .nav-container {
+        margin-bottom: 30px;
+    }
+
+    body.home nav#menu {
+        border-bottom: none;
+        padding-bottom: none;
+    }    
+
+    /*#search {margin-right:0px;}*/
+}
+
+@media only screen and (min-width: 1120px) {
+
+    .nav-container{margin-left: 0px;}
+    #search form {right:10px;}
+
+    /* First Level  */
+
+    nav#menu {
+      
+    }
+
+    body.home nav#menu {
+        border-bottom: none;
+        padding-bottom: none;
+    }
+    nav#menu ul {
+        float:left;
+        top: 0px;
+        background: #000 none repeat scroll 0% 0%;
+        z-index: 2000;
+        /*width: 780px;*/
+        display: inline-block;
+        margin-top:0px;
+        margin-left:0px;
+        max-width: 900px;
+        border: none;
+    }
+
+
+    nav#menu ul li {
+        clear:none; width:auto; display:inline;color:#FFF;background-color:#000;
+    }	
+
+    nav#menu div div > ul li a {
+        width:100%;
+        border-bottom: none;
+        color: #FFF;
+    }
+
+    nav#menu div div > ul li.current_page_item a{
+        color: #ee860b;
+    }
+
+    nav#menu ul li:hover {
+        background-color: #000;
+    }
+
+    nav#menu div div > ul li:hover {
+        background-color: #000;       
+    }    
+
+    nav#menu ul li.open {background-color:black; border-bottom}
+    nav#menu ul li.active.open a {background-color:black; color:#ee860b;}
+    nav#menu ul li.active:hover a, nav#menu ul li.active a:hover {color: #ee860b;}
+    nav#menu ul li a {padding:18px 32px 18px 0px; font-size: 1.29em;}
+
+    /*nav#menu ul li:first-child a {padding-left:14px;}       */
+                
+    nav#menu ul li a, nav#menu ul li ul li a { color: #414d5f;  }
+
+    /* For tab highlight of current section */ 
+
+    nav#menu div div > ul > li.current-menu-parent > a { 
+        border-top: 5px solid #ee860b; color:#ee860b; background-color:white;  
+        margin-top: -5px;
+    }
+
+    nav#menu div div > ul > li.current-menu-parent > a:hover { 
+        border-top: none; color:white; background-color:#ee860b;  
+        margin-top: 0px;
+    }    
+
+    /* Sublevel */
+
+    nav#menu ul ul {
+        position: absolute;
+        visibility: hidden;
+        width: 347px;
+        top:48px;
+        margin-left: 0px;
+        padding: 0px;
+        z-index: 10000;
+        border: 1px solid #414d5f;
+    } 
+
+    nav#menu ul ul.show {
+        display: none;
+        position: relative;
+        width: 100%;
+        visibility: visible;
+        background-color: #FFF;
+        border: 1px solid #414d5f;
+    }
+
+    nav#menu ul ul.active {display: block;}
+
+    nav#menu ul li ul li a { color:#414d5f; font-size:.85em; }
+    nav#menu ul li ul li a, nav#menu ul li:hover ul li a {
+    	padding: 10px 0px;
+        display: block;
+    	height: auto;
+        text-align: left;
+    	background-color: #FFF;
+     }
+
+    nav#menu ul li.active ul.active li a:hover {color:#ee860b;}
+    nav#menu ul li.active ul.active li a {background-color:#FFF; color:#414d5f;}
+    nav#menu ul li ul li {width: 99.4%;}  
+     
+     nav#menu ul li ul li a:hover, 
+     nav#menu ul li:hover ul li a:hover, 
+     nav#menu ul li ul li:hover {
+     	background-color: #FFF; color:#ee860b; 
+     }
+
+    nav#menu ul.show li.open ul.show {background-color:#FFF; color: #414d5f;
+        } 
+
+    nav#menu h4, nav#menu h5 { display:none; }   
+
+
+    nav#menu ul li:hover ul li a, nav#menu ul li ul li a:hover   {
+        color: #414d5f;
+    } 
+    nav#menu ul li:hover ul li a:hover{
+        color: #ee860b;
+    } 
+    nav#menu ul li:hover a, nav#menu ul li a:hover {color:#ee860b; }
+    nav#menu ul li ul li a { color: #414d5f;  background-color: #fff;}	
+    nav#menu div div ul li ul li:last-child a { border-bottom:none; }
+    	
+
+}
+
+
+@media only screen and (min-width: 1300px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+	nav#menu {
+    	background:transparent;
+	    position:relative;
+    	z-index:6000;
+		max-width:1100px;
+	} 	
+
+    #search form {right:0px;}
+}
+
+
+
